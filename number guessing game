@@ -1,0 +1,19 @@
+import random 
+sayi = random.randint(1,100)
+
+hak = 5 
+ 
+while hak>0:
+    hak -=1
+    tahmin = (int(input("tahmin :")))
+    if (tahmin ==sayi):
+        print(f"dogru tahmin ettniz ve hakkınız : {hak}")
+        break
+    elif sayi > tahmin:
+        print("yukarı bir tahminde bulunuz.")
+    else:
+        print("asagı bir tahminde bulunuz ")    
+
+    if hak ==0:
+        print("hakkınız bitti.")
+        print(f"sayi: {sayi} ")
